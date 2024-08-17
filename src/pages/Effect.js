@@ -2,6 +2,7 @@ import '../App.css';
 import OrderEffects from '../components/orderEffect';
 import AnimatetMe from '../components/animateMe';
 import AutoFocus from '../components/autoFocus';
+import ObjectList from '../components/objectList';
 
 function Effects() {
   return (
@@ -23,6 +24,11 @@ function Effects() {
       <div className='wrapper'>
         <b>3: Auto focus input</b> 
         <AutoFocus />
+      </div>
+
+      <div>
+        <b>4: API call in useEffect in mounting component</b> 
+        <ObjectList />
       </div>
     </div>
   );
