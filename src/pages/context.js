@@ -1,6 +1,9 @@
+import AddTask from "../components/addTask"
 import { Switch } from "../components/switch"
+import TaskList from "../components/taskList"
 import TestComponent from "../components/testComponent"
 import { AuthProvider } from "../context/authContext"
+import { TasksProvider } from "../context/taskContext"
 import { ToggleProvider, useToggle } from "../context/toggleContext"
 
 
@@ -32,6 +35,14 @@ const ContextComp = () => {
                     this is Auth
                     <TestComponent />
                 </AuthProvider>
+            </div>
+            <div>
+                <div>3. Task Dispatch</div>
+                <TasksProvider>
+                    <h1>Day off in Kyoto</h1>
+                    <AddTask />
+                    <TaskList />
+                </TasksProvider>
             </div>
         </div>
     )
